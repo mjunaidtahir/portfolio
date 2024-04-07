@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:junaidportfolio/widgets/network_image_view.dart';
 
-// Widget displays Image.network or Image.asset on the basis of source.
 class SourceAwareImage extends StatelessWidget {
   final String image;
   final bool isNetworkImage;
@@ -14,8 +14,10 @@ class SourceAwareImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return isNetworkImage
-        ? Image.network(
+        ? NetworkImageView(
             image,
+            height: 600,
+            width: double.infinity,
           )
         : Image.asset(
             image,

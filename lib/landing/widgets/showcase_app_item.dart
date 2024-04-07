@@ -54,7 +54,7 @@ class ShowcaseAppItem extends StatelessWidget {
 
   Widget _buildChild() {
     return Container(
-      color: cardColor,
+      color: Colors.transparent,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

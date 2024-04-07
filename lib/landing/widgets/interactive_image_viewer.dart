@@ -35,7 +35,6 @@ class _InteractiveImageViewerState extends State<InteractiveImageViewer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: primaryColor.withOpacity(.25),
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: primaryColor,

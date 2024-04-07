@@ -12,20 +12,15 @@ class JunaidPortfolio extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: AppConstants.appTitle,
-      builder: (context, child) {
-        return ResponsiveWrapper.builder(
-          BouncingScrollWrapper.builder(context, child!),
-          minWidth: 300,
-          debugLog: true,
-          defaultScale: true,
-          breakpoints: [
-            const ResponsiveBreakpoint.autoScaleDown(450, name: MOBILE),
-            const ResponsiveBreakpoint.autoScale(800, name: TABLET),
-            const ResponsiveBreakpoint.resize(1200, name: DESKTOP),
-          ],
-          background: Container(color: primaryColor),
-        );
-      },
+      builder: (context, child) => ResponsiveBreakpoints.builder(
+        child: child!,
+        breakpoints: [
+          const Breakpoint(start: 0, end: 450, name: MOBILE),
+          const Breakpoint(start: 451, end: 800, name: TABLET),
+          const Breakpoint(start: 801, end: 1920, name: DESKTOP),
+          const Breakpoint(start: 1921, end: double.infinity, name: '4K'),
+        ],
+      ),
       home: const LandingScreen(),
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,

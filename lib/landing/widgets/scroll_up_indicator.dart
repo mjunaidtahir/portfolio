@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:junaidportfolio/landing/landing_screen.dart';
 import 'package:junaidportfolio/utilities/app_constants.dart';
 import 'package:junaidportfolio/utilities/url_launcher.dart';
 
@@ -39,7 +38,7 @@ class _ScrollUpIndicatorState extends State<ScrollUpIndicator> {
               width: double.maxFinite,
               height: 56.0,
               alignment: Alignment.centerLeft,
-              color: cardColor.withOpacity(.9),
+              color: Colors.transparent,
               child: GestureDetector(
                 onTap: () {
                   widget.scrollController.animateTo(
@@ -100,9 +99,9 @@ class _ScrollUpIndicatorState extends State<ScrollUpIndicator> {
         launchUrl(AppConstants.openSourceRepoURL);
       },
       behavior: HitTestBehavior.translucent,
-      child: Row(
+      child: const Row(
         mainAxisSize: MainAxisSize.min,
-        children: const [
+        children: [
           SizedBox(width: 24.0),
           Text(
             'BUILT\nWITH',

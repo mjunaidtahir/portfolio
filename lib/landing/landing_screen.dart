@@ -6,11 +6,6 @@ import 'widgets/scroll_up_indicator.dart';
 
 const dividerColor = Color.fromARGB(255, 54, 163, 156);
 const primaryColor = Color.fromRGBO(7, 36, 33, 1);
-const cardColor = Color.fromRGBO(24, 100, 94, 1);
-
-// const dividerColor = Color(0xFF464751);
-// const primaryColor = Color.fromRGBO(47, 49, 64, 1.0);
-// const cardColor = Color.fromRGBO(54, 56, 72, 1.0);
 
 class LandingScreen extends StatefulWidget {
   const LandingScreen({super.key});
