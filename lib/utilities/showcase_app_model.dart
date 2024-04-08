@@ -32,6 +32,14 @@ class ShowcaseAppModel {
 // List of apps that will be listed on landing page.
 const apps = [
   ShowcaseAppModel.withNetworkAsset(
+    name: 'BZNS',
+    image:
+        'https://play-lh.googleusercontent.com/Ir35kGv5XYWfGrxOqGSBbJkiQoPSeavWqg28sjDEa18WMeBCRikdKs_Ss4KHMnCirKA=w5120-h2880-rw',
+    playStoreURL: 'https://play.google.com/store/apps/details?id=com.bzns.app',
+    // appStoreURL: 'https://apps.apple.com/pk/app/evalpro-ai/id6469349191',
+    topic: 'BZNS UAE Business App',
+  ),
+  ShowcaseAppModel.withNetworkAsset(
     name: 'Story Mii',
     image:
         'https://play-lh.googleusercontent.com/jdRjy8FHkS09KYNm7xAr4ck_4WkHbuu97TEMoyNtYi7N9YSF387b9OBUyL8tvTLqXxXe=w5120-h2880-rw',
